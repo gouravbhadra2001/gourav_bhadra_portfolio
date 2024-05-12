@@ -1,0 +1,45 @@
+.education {
+    padding: 20px;
+  }
+  
+  .education-detail {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-detail h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .education-detail table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .education-detail th,
+  .education-detail td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .education-detail th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .education-detail tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .education-detail:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+  }
+  

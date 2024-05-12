@@ -1,0 +1,66 @@
+.home {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+  background: linear-gradient(to right, #a8f5f3cd, #dbf1e8); /* Light gradient background using contrasting shades */
+}
+
+.selfImg {
+  display: flex;
+  
+}
+
+.selfImg img {
+  height: 300px;
+  width: 300px;
+
+  height: auto;
+  border-radius: 50%;
+}
+
+.introduction {
+  flex: 1;
+  padding: 0 2rem;
+  justify-content: space-around;
+}
+
+.name, .developer {
+  text-align: right;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.developer {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.cta-resume {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  /* Button background color */
+  /* Button text color */
+}
+
+.cta-resume:hover {
+  background-color: white; 
+  color: black;
+}

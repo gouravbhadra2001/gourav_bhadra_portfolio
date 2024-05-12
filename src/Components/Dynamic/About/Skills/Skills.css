@@ -1,0 +1,38 @@
+.skills {
+    padding: 20px;
+  }
+  
+  .skills h2 {
+    margin-bottom: 20px;
+  }
+  
+  .skills h3 {
+    margin-bottom: 10px;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .skill-name {
+    flex: 1;
+  }
+  
+  .skill-proficiency {
+    margin-right: 10px;
+  }
+  
+  .skill-confidence {
+    width: 60px;
+    text-align: right;
+  }
+  
