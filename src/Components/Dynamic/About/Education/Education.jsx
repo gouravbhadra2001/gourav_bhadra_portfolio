@@ -49,7 +49,7 @@ const Education = () => {
         <div className="timeline">
           {timeline.map((item, index) => (
             <div key={index} className="timeline-item">
-              <div className={`no ${selectedDetailIndex === index ? 'active' : ''}`} onClick={() => handleTimelineItemClick(index)}>
+              <div className={`no ${selectedDetailIndex === index ? 'no-active' : ''}`} onClick={() => handleTimelineItemClick(index)}>
                 {item.no}
               </div>
               {(index < 2) ? <div className="connector"></div> : null}

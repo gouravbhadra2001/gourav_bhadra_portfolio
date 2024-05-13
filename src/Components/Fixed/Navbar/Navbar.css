@@ -10,15 +10,23 @@ padding-block: 20px;
 margin-inline: auto;
 backdrop-filter: blur(10px);
 
+
+z-index: 1000;
  
 
 }
   .logo {
     font-size: 30px;
     text-decoration: none;
-    
-  }
   
+  }
+  .logo-underline{
+    margin-bottom: 0;
+    width: 60px;
+    height: 2px;
+    background-color: brown;
+    margin-top: 10px;
+  }
   .menus {
     display: flex;
     height: inherit;

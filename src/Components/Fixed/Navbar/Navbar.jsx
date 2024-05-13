@@ -16,7 +16,11 @@ const Navbar = () => {
 
       {/*Logo Part*/}
       <NavLink to="/" className="logo">
+      
         GOURAV BHADRA
+        <br />
+        <div className='logo-underline'></div>
+
       </NavLink>
 
       {/*Menus Part*/}

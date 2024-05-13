@@ -37,15 +37,26 @@
   overflow: hidden;
 }
 
-.skill-card h3 {
-  padding: 15px;
-  border-bottom: 1px solid #ccc;
+.skill-card .skill-type-heading {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+
 }
 
 .skill-category {
   padding: 15px;
 }
 
+.skill-type-heading-underline{
+  margin-left: 20px;
+  margin-block: 0;
+  width: 20px;
+}
+
+#blue-underline{
+  background-color: blueviolet;
+}
 .skill-item {
   margin-bottom: 10px;
 }
@@ -55,11 +66,17 @@
 }
 
 .skill-name {
-  font-weight: bold;
+ margin-bottom: 2px;
+ font-size: 13px;
 }
 
-.progress-bar {
+.empty-10{
   height: 10px;
+}
+
+
+.progress-bar {
+  height: 7px;
   background-color: #ddd;
   border-radius: 5px;
   overflow: hidden;

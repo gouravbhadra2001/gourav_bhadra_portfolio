@@ -35,18 +35,23 @@ const Skills = () => {
   return (
     <div className='skills'>
       <div className='about-heading'>Skills</div>
+      
       <div className="heading-underline"></div>
       <div className="skill-cards">
         {skillsData.map((skillCategory, index) => (
           <div key={index} className={`skill-card ${skillCategory.category.toLowerCase().replace(' ', '-')}`}>
-            <h3>{skillCategory.category}</h3>
+            <div className='skill-type-heading'>{skillCategory.category}</div>
+            <div className="heading-underline skill-type-heading-underline" id='blue-underline'></div>
             <div className="skill-category">
               {skillCategory.skills.map((skill, skillIndex) => (
                 <div key={skillIndex} className="skill-item">
                   <div className="skill-name">{skill.name}</div>
+                  
                   <div className="progress-bar">
+                  
                     <div className="progress" style={{ width: `${skill.confidence}%` }}></div>
                   </div>
+                  <div className='empty-10'></div>
                 </div>
               ))}
             </div>

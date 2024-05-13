@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
+import '../../../Animations/bgColorChange.css'
 import Self from './Assets/Self.png';
 import ResumePDF from './Assets/GOURAV_RESUME.pdf'; // Import the PDF file
-
+import resumeIcon from './Assets/icons8-download-resume-80.png'
+import resumeIcon_dark from './Assets/icons8-download-resume-80_dark.png'
+import "../../../Animations/slideInBlur.css"
 const Home = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
   const openResumeInNewTab = () => {
     window.open(ResumePDF, '_blank'); // Open PDF in new tab
   };
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className='home'>
+    <div className='home color-change-5x fade-in'>
       {/* Self image */}
       <section className="selfImg">
         <img src={Self} alt="Self" />
@@ -29,9 +43,22 @@ const Home = () => {
         </div>
         
         {/* Download Resume Button */}
-        <div className="cta-resume" onClick={openResumeInNewTab}>
-          Download Resume
-        </div>
+        <div
+  className={"cta-resume" + (isHovered ? "-hover" : "")}
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+  onClick={openResumeInNewTab}
+>
+  <img
+    width="40"
+    height="40"
+    src={isHovered ? resumeIcon_dark : resumeIcon}
+    alt="open-resume"
+  />
+  <br />
+  <p>Download Resume</p>
+</div>
+
       </section>
     </div>
   );

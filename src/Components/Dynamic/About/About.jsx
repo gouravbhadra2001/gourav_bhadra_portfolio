@@ -3,12 +3,12 @@ import Education from './Education/Education';
 import Certificates from './Certificates/Certificates';
 import Skills from './Skills/Skills';
 import "./About.css"
-
+import "../../../Animations/slideInBlur.css"
 const About = () => {
   const [activeTab, setActiveTab] = useState('education');
 
   return (
-    <div className='about'>
+    <div className='about slide-in-left'>
       {/*<div className="top-section">
         <button className={`tab ${activeTab === 'education' ? 'active' : ''}`} onClick={() => setActiveTab('education')}>
           Education

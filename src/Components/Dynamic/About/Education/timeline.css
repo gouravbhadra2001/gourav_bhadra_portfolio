@@ -20,7 +20,7 @@ align-items: center;
     cursor: pointer;
 }
 
-.timeline-item .no:hover{
+.timeline-item .no:hover, .timeline-item .no-active{
    background-color: black;
    color:white;
 }
