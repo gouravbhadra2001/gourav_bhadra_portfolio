@@ -1,45 +1,86 @@
 .education {
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 50px;
+}
+
+.heading-underline {
+  height: 2px;
+  width: 50px;
+  background-color: red;
+  border-radius: 15px;
+  margin-block-end: 20px;
+  margin-block-start: 10px;
+}
+
+.about-heading {
+  font-size: 20px;
+}
+
+.education-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: inherit;
+  padding: 30px;
+}
+
+.education-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left:50px
+}
+
+.education-detail-heading{
+  font-size: 20px;
+}
+.education-detail-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+
+
+.card {
   
-  .education-detail {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .education-detail h3 {
-    margin: 0;
-    padding: 15px;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .education-detail table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .education-detail th,
-  .education-detail td {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    text-align: left; /* Align text to the left */
-  }
-  
-  .education-detail th {
-    background-color: #f9f9f9;
-    font-weight: bold;
-  }
-  
-  .education-detail tr:last-child td {
-    border-bottom: none;
-  }
-  
-  .education-detail:hover {
-    transform: translateY(-3px);
-    transition: transform 0.3s ease;
-  }
-  
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: calc(50% - 10px); 
+  box-sizing: border-box; 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-header {
+
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.fieldno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: rgb(249, 249, 251);
+  background-color: blue;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fieldname{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.card-body {
+  padding: 20px;
+  font-size: 12px;
+}

@@ -1,38 +1,84 @@
 .skills {
-    padding: 20px;
-  }
-  
-  .skills h2 {
-    margin-bottom: 20px;
-  }
-  
-  .skills h3 {
-    margin-bottom: 10px;
-  }
-  
-  .skills ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skills li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  .skill-name {
-    flex: 1;
-  }
-  
-  .skill-proficiency {
-    margin-right: 10px;
-  }
-  
-  .skill-confidence {
-    width: 60px;
-    text-align: right;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 50px;
+  padding-inline: 50px;
+}
+
+.about-heading {
+  font-size: 20px;
+}
+
+.heading-underline {
+  height: 2px;
+  width: 50px;
+  background-color: red;
+  border-radius: 15px;
+  margin-block-end: 20px;
+  margin-block-start: 10px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.skill-card {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+.skill-card h3 {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.skill-category {
+  padding: 15px;
+}
+
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Colors based on category */
+.coding .progress {
+  background-color: blue; /* Blue */
+}
+
+.development .progress {
+  background-color: green; /* Green */
+}
+
+.machine-learning .progress {
+  background-color: red; /* Red */
+}

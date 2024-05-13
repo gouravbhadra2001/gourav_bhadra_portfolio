@@ -2,31 +2,37 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
 
-//This navbar is fixed throughout the app
+
+
+const menu_items = [
+  {name: "Home", href :"/"},
+  {name: "About Me", href: "/about"},
+  {name: "Projects", href: "/projects"}
+];
 
 const Navbar = () => {
   return (
     <div className='NavBar'>
 
-
-    {/*Logo Part*/}
+      {/*Logo Part*/}
       <NavLink to="/" className="logo">
-GOURAV BHADRA
+        GOURAV BHADRA
       </NavLink>
 
-    {/*Menus Part*/}
+      {/*Menus Part*/}
       <div className="menus">
-        <NavLink className="menu" to='/'>Home </NavLink>
-        <NavLink className="menu" to='/about'>About</NavLink>
-        <NavLink className="menu" to='/projects'>Projects</NavLink>
-        <NavLink className="menu" to='/experience' aria-disabled>Experience</NavLink>
-        <NavLink className="menu" to='/testimonials' aria-disabled>Testimonials</NavLink>
-      </div>
-
-        {/*Contact btn part*/} 
-      <NavLink className="contact-btn" to="/contact">
+        {menu_items.map((item, index) => (
+          <NavLink key={index} className={({isActive})=>isActive?"menu-active":"menu"} to={item.href}>
+            {item.name}
+          </NavLink>
+        ))}
+        <NavLink className="contact-btn" to="/contact">
         Let's Connect
       </NavLink>
+      </div>
+
+      {/*Contact btn part*/}
+      
     </div>
   )
 }

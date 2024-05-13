@@ -1,22 +1,29 @@
 .home {
   display: flex;
-  margin-top: 80px;
   justify-content: space-around;
   align-items: center;
-  padding: 100px;
-  background: linear-gradient(to right, #a8f5f3cd, #dbf1e8); /* Light gradient background using contrasting shades */
+  padding: 70px;
+  
+  box-shadow: rgba(134, 134, 169, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 80vw;
+  margin: auto;
+  margin-block: 100px;
+  height: fit-content;
+  
 }
 
 .selfImg {
   display: flex;
+  height: fit-content;
+  width:  fit-content;
+  padding: 40px;
   
 }
 
 .selfImg img {
   height: 300px;
   width: 300px;
-
-  height: auto;
+  box-shadow: rgba(246, 246, 249, 0.592) 0px 7px 29px 0px;
   border-radius: 50%;
 }
 
@@ -24,6 +31,8 @@
   flex: 1;
   padding: 0 2rem;
   justify-content: space-around;
+
+  padding: 50px;
 }
 
 .name, .developer {
@@ -31,36 +40,38 @@
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 35px;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .developer {
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 17px;
+  
   margin-bottom: 1rem;
 }
 
 .summary {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 1rem;
   text-align: justify;
+  
 }
 
 .cta-resume {
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border: 1px solid black;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  /* Button background color */
-  /* Button text color */
+  border: 1px solid rgb(5, 5, 5);
+  font-size: 15px;
+
 }
 
 .cta-resume:hover {
-  background-color: white; 
-  color: black;
+  background-color: rgba(255, 255, 255, 0.261); 
+  
 }

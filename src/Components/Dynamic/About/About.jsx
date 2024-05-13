@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div className='about'>
-      <div className="left-panel">
+      {/*<div className="top-section">
         <button className={`tab ${activeTab === 'education' ? 'active' : ''}`} onClick={() => setActiveTab('education')}>
           Education
         </button>
@@ -19,12 +19,12 @@ const About = () => {
         <button className={`tab ${activeTab === 'certificates' ? 'active' : ''}`} onClick={() => setActiveTab('certificates')}>
           Certificates
         </button>
-      </div>
+      </div>*/}
 
-      <div className="right-section">
-        {activeTab === 'education' && <Education />}
-        {activeTab === 'skills' && <Skills />}
-        {activeTab === 'certificates' && <Certificates />}
+      <div className="bottom-section">
+        <Education />
+        <Skills />
+        <Certificates />
       </div>
     </div>
   );

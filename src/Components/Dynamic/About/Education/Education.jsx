@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Education.css"
+import "./timeline.css"
 
 const Education = () => {
-  
+  const [selectedDetailIndex, setSelectedDetailIndex] = useState(0);
+
   const educationDetails = [
     {
       level: 'Madhyamik (Class X)',
+      school: 'Ramakrishna Vivekananda Mission Vidyabhawan, Barrackpore', // Add school name here
       board: 'West Bengal Board of Secondary Education',
       year: '2018',
       percentage: '88.89%',
@@ -13,6 +16,7 @@ const Education = () => {
     },
     {
       level: 'Secondary (Class XII)',
+      school: 'Ramakrishna Vivekananda Mission Vidyabhawan (HS), Barrackpore', // Add school name here
       board: 'West Bengal Council of Higher Secondary Education',
       year: '2020',
       percentage: '92.4%',
@@ -25,29 +29,55 @@ const Education = () => {
       college: 'RCC Institute of Information Technology, Kolkata',
       university: 'Maulana Abul Kalam Azad University of Technology (MAKAUT)',
       year: '2021',
-      cgpa: '9.5',
       location: 'Canal S Rd, Beleghata, Kolkata, West Bengal 700015',
     },
   ];
 
+  const timeline = [
+    {no: "1"}, {no:"2"}, {no:"3"}
+  ];
+
+  const handleTimelineItemClick = (index) => {
+    setSelectedDetailIndex(index);
+  };
+
   return (
     <div className='education'>
-      <h2>Education Details</h2>
-      {educationDetails.map((detail, index) => (
-        <div key={index} className="education-detail">
-          <h3>{detail.level}</h3>
-          <table>
-            <tbody>
-              {Object.entries(detail).map(([key, value]) => (
-                <tr key={key}>
-                  <th>{key.charAt(0).toUpperCase() + key.slice(1)}</th>
-                  <td>{value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <div className='about-heading'>Education Details</div>
+      <div className='heading-underline'></div>
+      <div className='education-body'>
+        <div className="timeline">
+          {timeline.map((item, index) => (
+            <div key={index} className="timeline-item">
+              <div className={`no ${selectedDetailIndex === index ? 'active' : ''}`} onClick={() => handleTimelineItemClick(index)}>
+                {item.no}
+              </div>
+              {(index < 2) ? <div className="connector"></div> : null}
+            </div>
+          ))}
         </div>
-      ))}
+        <div className="education-detail">
+          <div className='education-detail-heading'>{educationDetails[selectedDetailIndex].level}</div>
+          <div className="heading-underline"></div>
+          <div className='education-detail-body'>
+            {Object.entries(educationDetails[selectedDetailIndex]).map(([key, value], index) => (
+              (key !== 'level') ? (
+                <div key={key} className="card">
+                  <div className="card-header">
+                  <div className="fieldno">
+                    {index}
+                  </div>
+                  <div className="fieldname">
+                  {key.replace(key.charAt(0), key.charAt(0).toUpperCase())}</div>
+                  </div>
+                  
+                  <div className="card-body">{value}</div>
+                </div>
+              ) : null
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

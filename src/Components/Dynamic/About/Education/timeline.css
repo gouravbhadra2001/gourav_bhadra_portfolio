@@ -1,0 +1,32 @@
+.timeline, .timeline-item{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.timeline{
+    margin-right: 30px;
+}
+
+.timeline-item .no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.timeline-item .no:hover{
+   background-color: black;
+   color:white;
+}
+
+.timeline-item .connector{
+    width: 1px;
+    height: 100px;
+    background-color: black;
+}

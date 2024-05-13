@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Skills.css"
+import "./Skills.css";
+
 const Skills = () => {
   
   const skillsData = [
@@ -7,8 +8,8 @@ const Skills = () => {
       category: 'Coding',
       skills: [
         { name: 'C', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'Java', proficiency: 'Intermediate', confidence: 70 },
         { name: 'Python', proficiency: 'Intermediate', confidence: 70 },
+        { name: 'Java', proficiency: 'Intermediate', confidence: 70 },
         { name: 'JavaScript', proficiency: 'Intermediate', confidence: 70 },
       ],
     },
@@ -33,21 +34,25 @@ const Skills = () => {
 
   return (
     <div className='skills'>
-      <h2>Skills</h2>
-      {skillsData.map((skillCategory, index) => (
-        <div key={index}>
-          <h3>{skillCategory.category}</h3>
-          <ul>
-            {skillCategory.skills.map((skill, skillIndex) => (
-              <li key={skillIndex}>
-                <div className="skill-name">{skill.name}</div>
-                <div className="skill-proficiency">{skill.proficiency}</div>
-                <div className="skill-confidence">{skill.confidence}%</div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <div className='about-heading'>Skills</div>
+      <div className="heading-underline"></div>
+      <div className="skill-cards">
+        {skillsData.map((skillCategory, index) => (
+          <div key={index} className={`skill-card ${skillCategory.category.toLowerCase().replace(' ', '-')}`}>
+            <h3>{skillCategory.category}</h3>
+            <div className="skill-category">
+              {skillCategory.skills.map((skill, skillIndex) => (
+                <div key={skillIndex} className="skill-item">
+                  <div className="skill-name">{skill.name}</div>
+                  <div className="progress-bar">
+                    <div className="progress" style={{ width: `${skill.confidence}%` }}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

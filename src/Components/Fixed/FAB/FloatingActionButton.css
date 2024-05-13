@@ -4,18 +4,26 @@
     right: 20px;
   }
   
-  .fab-main {
+  .fab-main, .fab-main-open {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #000; /* Changed background color to black */
-    color: #fff; /* Changed text color to white */
+    background: linear-gradient(to right, rgb(122, 209, 243), rgb(130, 234, 198));
+    color: #3b3636; /* Changed text color to white */
     font-size: 24px;
     border: none;
     cursor: pointer;
-    outline: none;
-  }
-  
+    
+}
+
+.fab-main{
+  transition: transform ease-in-out 0.3s; /* Transition property added here */
+}
+
+.fab-main:hover, .fab-main-open {
+    transform: rotateZ(45deg) scale(1.1);
+}
+
   .fab-secondary-container {
     position: absolute;
     bottom: 80px;
@@ -35,23 +43,23 @@
     height: 50px;
     border-radius: 50%;
     background-color: #000; /* Changed background color to black */
-    color: #fff; /* Changed text color to white */
-    font-size: 18px;
-    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Added box shadow */
     margin-bottom: 10px;
     cursor: pointer;
     outline: none;
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center items horizontally */
-  }
+}
+
   
   .fab-secondary img {
-    width: 30px; /* Adjust image size as needed */
-    height: 30px; /* Adjust image size as needed */
+    width: 30px; 
+    height: 30px; 
   }
   
   .fab-secondary:hover {
-    background-color: #333; /* Darker gray background on hover */
+    background-color: #333; 
+    
   }
   

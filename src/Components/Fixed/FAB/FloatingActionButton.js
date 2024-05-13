@@ -29,7 +29,7 @@ const FloatingActionButton = () => {
   return (
     <div className="fab-container">
       {/* Main floating action button */}
-      <button className="fab-main" onClick={toggleButtons}>
+      <button className={isOpen?"fab-main-open": "fab-main"} onClick={toggleButtons}>
         +
       </button>
 
