@@ -3,7 +3,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 70px;
-  
   box-shadow: rgba(134, 134, 169, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   width: 80vw;
   margin: auto;
@@ -11,8 +10,6 @@
   height: fit-content;
   
 }
-
-
 
 .selfImg {
   display: flex;
@@ -35,7 +32,6 @@
   flex: 1;
   padding: 0 2rem;
   justify-content: space-around;
-
   padding: 50px;
 }
 
@@ -45,20 +41,20 @@
 
 .name {
   font-size: 35px;
-  font-weight: bold;
+  font-weight:500;
   margin-bottom: 10px;
 }
 
 .developer {
   font-size: 17px;
   
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 .summary {
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
   text-align: justify;
   
 }
@@ -91,4 +87,49 @@ color: rgba(0, 0, 0, 0.701);
   
 }
 
+@media (max-width:730px) {
+  
 
+  .home{
+    flex-direction: column;
+    padding: 20px;
+
+  }
+  .selfImg img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+  
+  }
+  .introduction{
+    padding: 20px;
+  }
+  .name, .developer {
+    text-align: center;
+  }
+
+  .name {
+    font-size: 25px;
+    font-weight:500;
+    
+  }
+ .developer{
+  font-size: 15px;
+ }
+
+ .summary{
+  font-size: 10px;
+ }
+ .cta-resume, .cta-resume-hover {
+  width: 150px;
+   border-radius: 25px;
+   font-size: 12px;
+   margin-inline: auto;
+ 
+ }
+ .cta-resume img, .cta-resume-hover img{
+  height: 20px;
+  width: 20px;
+}
+
+}

@@ -35,6 +35,7 @@
   width: calc(33.33% - 20px);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .skill-card .skill-type-heading {
@@ -98,4 +99,84 @@
 
 .machine-learning .progress {
   background-color: red; /* Red */
+}
+
+
+@media (max-width: 730px) {
+
+  .about-heading{
+    font-size: 17px;
+  }
+  .skill-card{
+    width: 60vw;
+  }
+
+
+  .skill-card .skill-type-heading {
+  font-size: 15px;
+  }
+
+  .heading-underline {
+  
+    width: 35px;
+   
+   
+    margin-block-end: 10px;
+    margin-block-start: 5px;
+  }
+  
+
+  
+  .skill-card {
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+  }
+  
+
+  
+  .skill-category {
+    padding: 10px;
+    padding-inline: 20px;
+  }
+  
+  .skill-type-heading-underline{
+    margin-left: 20px;
+    margin-block: 0;
+    width: 20px;
+  }
+  
+  #blue-underline{
+    background-color: blueviolet;
+    margin-block-start: -10px;
+  }
+  .skill-item {
+    margin-bottom: 7px;
+  }
+  
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .skill-name {
+   margin-bottom: 2px;
+   font-size: 13px;
+  }
+  
+  .empty-10{
+    height: 5px;
+  }
+  
+  
+  .progress-bar {
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  
+  
+ 
 }

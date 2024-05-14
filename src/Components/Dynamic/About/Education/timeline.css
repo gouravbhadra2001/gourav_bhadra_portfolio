@@ -30,3 +30,31 @@ align-items: center;
     height: 100px;
     background-color: black;
 }
+
+
+@media (max-width: 730px) {
+    .timeline, .timeline-item{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    }
+
+
+    .timeline{
+        margin-right: 0;
+        margin-inline: auto;
+        width: 70vw;
+        margin-bottom: 20px;
+        justify-content: center;
+        
+    }
+    .timeline-item .connector{
+        width: 25vw;
+        height: 1px;
+        background-color: black;
+    }
+    
+  
+
+}

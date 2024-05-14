@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Contact.css"
 import contactImg from "./contact.svg"
 import "../../../Animations/slideInBlur.css"
+
 const Contact = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      },[])
     return (
         <div className='contact-main fade-in'>
         <div className="contact-heading">Contact Me</div>

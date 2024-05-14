@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Home.css';
 import '../../../Animations/bgColorChange.css'
 import Self from './Assets/Self.png';
@@ -6,10 +6,12 @@ import ResumePDF from './Assets/GOURAV_RESUME.pdf'; // Import the PDF file
 import resumeIcon from './Assets/icons8-download-resume-80.png'
 import resumeIcon_dark from './Assets/icons8-download-resume-80_dark.png'
 import "../../../Animations/slideInBlur.css"
+import { ScreenContext } from '../../../App';
+
 const Home = () => {
 
   const [isHovered, setIsHovered] = useState(false);
-
+  const screenWidth = useContext(ScreenContext)
   const openResumeInNewTab = () => {
     window.open(ResumePDF, '_blank'); // Open PDF in new tab
   };
@@ -22,6 +24,15 @@ const Home = () => {
     setIsHovered(false);
   };
 
+
+  useEffect(() => {
+    console.log(screenWidth);
+  }, [screenWidth]);
+  
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   return (
     <div className='home color-change-5x fade-in'>
       {/* Self image */}

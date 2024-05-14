@@ -1,16 +1,39 @@
-import React from 'react'
-import Navbar from './Components/Fixed/Navbar/Navbar'
-import Main from './Components/Fixed/Main/Main'
-import FloatingActionButton from './Components/Fixed/FAB/FloatingActionButton'
+import React, { createContext, useEffect, useState } from 'react';
+import Navbar from './Components/Fixed/Navbar/Navbar';
+import Main from './Components/Fixed/Main/Main';
+import FloatingActionButton from './Components/Fixed/FAB/FloatingActionButton';
+
+// Create context
+const ScreenContext = createContext();
 
 const App = () => {
-  return (
-    <div>
-     <Navbar/>
-     <Main/>
-     <FloatingActionButton/>
-    </div>
-  )
-}
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-export default App
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  //console.log("ScreenWidth:", screenWidth); 
+
+  return (
+    <ScreenContext.Provider value={screenWidth}>
+      <div>
+        <Navbar />
+        <Main />
+        <FloatingActionButton />
+      </div>
+      
+    </ScreenContext.Provider>
+  );
+};
+
+export { App, ScreenContext };

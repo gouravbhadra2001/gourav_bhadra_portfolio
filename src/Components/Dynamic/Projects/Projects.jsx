@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Projects.css";
 import reactImg from "./Assets/react-original.svg"
 import nodeImg from "./Assets/nodejs.svg"
@@ -6,8 +6,10 @@ import mongodbImg from "./Assets/mongodb-original.svg"
 import flaskImg from "./Assets/flask.svg"
 import tensorflowImg from "./Assets/tensorflow-logo.svg"
 import "../../../Animations/slideInBlur.css"
+
 const Projects = () => {
-    // Sample projects data
+  
+    
     const projectsData = [
         {
             title: "Project 1: Software-based Alzheimer's Disease Detection",
@@ -65,9 +67,15 @@ const Projects = () => {
         },*/
     ];
 
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      },[])
+
+
     return (
         <div className="projects slide-in-left">
-            <div className="projects-heading">My Projects</div>
+            <div className="projects-heading">My Recent Projects</div>
             <div className="heading-underline projects-heading-underline"></div>
             
             {projectsData.map((project, index) => (

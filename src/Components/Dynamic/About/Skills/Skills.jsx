@@ -7,27 +7,25 @@ const Skills = () => {
     {
       category: 'Coding',
       skills: [
-        { name: 'C', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'Python', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'Java', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'JavaScript', proficiency: 'Intermediate', confidence: 70 },
+        { name: 'C', proficiency: 'Intermediate', confidence: 60 },
+        { name: 'Python', proficiency: 'Intermediate', confidence: 80 },
+        { name: 'Java', proficiency: 'Intermediate', confidence: 65 },
+        { name: 'JavaScript', proficiency: 'Intermediate', confidence: 63 },
       ],
     },
     {
       category: 'Development',
       skills: [
-        { name: 'Full Stack Web Development', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'HTML', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'CSS', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'MERN Stack', proficiency: 'Intermediate', confidence: 70 },
-        { name: 'Flask', proficiency: 'Intermediate', confidence: 70 },
+        { name: 'MERN Stack', proficiency: 'Intermediate', confidence: 60 },
+        { name: 'HTML and CSS', proficiency: 'Intermediate', confidence: 60 },
+        { name: 'Flask', proficiency: 'Intermediate', confidence: 50 },
       ],
     },
     {
       category: 'Machine Learning',
       skills: [
-        { name: 'Classical Machine Learning (Scikit-learn)', proficiency: 'Elementary', confidence: 50 },
-        { name: 'Deep Learning (Tensorflow)', proficiency: 'Elementary', confidence: 50 },
+        { name: 'Classical Machine Learning (Scikit-learn)', proficiency: 'Elementary', confidence: 45 },
+        { name: 'Deep Learning (Tensorflow)', proficiency: 'Elementary', confidence: 40 },
       ],
     },
   ];

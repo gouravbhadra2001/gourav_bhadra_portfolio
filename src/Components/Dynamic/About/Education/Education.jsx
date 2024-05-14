@@ -15,7 +15,7 @@ const Education = () => {
       location: '7, River Side Rd, Sardar Bazar, Barrackpore, Barrackpur Cantonment, West Bengal 700120',
     },
     {
-      level: 'Secondary (Class XII)',
+      level: 'Higher Secondary (Class XII)',
       school: 'Ramakrishna Vivekananda Mission Vidyabhawan (HS), Barrackpore', // Add school name here
       board: 'West Bengal Council of Higher Secondary Education',
       year: '2020',
@@ -68,7 +68,10 @@ const Education = () => {
                     {index}
                   </div>
                   <div className="fieldname">
-                  {key.replace(key.charAt(0), key.charAt(0).toUpperCase())}</div>
+                  <div className="fieldnameText">{key.replace(key.charAt(0), key.charAt(0).toUpperCase())}</div>
+          
+                  <div className=' fieldname-underline'></div>
+                  </div>
                   </div>
                   
                   <div className="card-body">{value}</div>

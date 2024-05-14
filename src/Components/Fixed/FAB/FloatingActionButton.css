@@ -8,20 +8,24 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(to right, rgb(122, 209, 243), rgb(130, 234, 198));
-    color: #3b3636; /* Changed text color to white */
-    font-size: 24px;
+    background: linear-gradient(to right, rgb(56, 34, 230), rgb(158, 69, 225));
+
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+
 
 .fab-main{
   transition: transform ease-in-out 0.3s; /* Transition property added here */
 }
 
 .fab-main:hover, .fab-main-open {
-    transform: rotateZ(45deg) scale(1.1);
+    transform: rotateZ(-45deg) scale(1.1);
 }
 
   .fab-secondary-container {
@@ -61,5 +65,54 @@
   .fab-secondary:hover {
     background-color: #333; 
     
+  }
+
+
+  @media (max-width:730px) {
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .fab-main, .fab-main-open {
+      width: 45px;
+      height: 45px;   
+      
+      
+  }
+
+  .fab-main img, .fab-main-open img{
+    width: 20px; height: 20px;
+  }
+
+    .fab-secondary-container {
+
+      bottom: 50px;
+      right: 10px;
+
+    }
+
+
+    
+
+    .fab-secondary {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    
+  }
+  
+    
+    .fab-secondary img {
+      width: 20px; 
+      height: 20px; 
+    }
+    
+    .fab-secondary:hover {
+      background-color: #333; 
+      
+    }
   }
   

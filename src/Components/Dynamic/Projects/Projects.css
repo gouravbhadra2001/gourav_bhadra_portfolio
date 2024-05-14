@@ -127,4 +127,120 @@
 
 
 
+@media (max-width:730px){
+  .project{
+    margin-inline: 6vw;
+    padding: 6vh 5vw ;
+  }
 
+  .projects {
+    margin-block: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .projects-heading {
+    
+    font-size: 15px;
+  
+  
+  }
+  
+  .project-title {
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trailing{
+    width: 40px;
+    
+    display: flex;
+
+    padding-inline: 10px;
+
+    border-right: 2px solid blue;
+
+    
+  }
+
+  .trailing img{
+    height: 17px; width: 17px;
+
+  }
+  .project-description {
+    font-size: 10px;
+
+    margin-bottom: 10px;
+  }
+  
+  .project-technologies {
+    font-size: 13px;
+
+    margin-bottom: 10px;
+  }
+  .project-technologies .heading-underline{
+    width: 30px;
+    background-color: rgb(115, 29, 172);
+    margin-bottom: 5px;
+  }
+  
+  .technology-imgs{
+    display: flex;
+    width:37vw;
+   
+  }
+  
+  
+ 
+  .project-card-heading{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-inline: 0;
+    padding: 10px;
+    
+  }
+  
+  .project-card p {
+    font-size: 10px;
+    
+  }
+  
+  .project-card-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  
+  }
+  .sub-card {
+    font-size: 10px;
+    width: 60vw;
+   
+    border-radius: 7px;
+    padding: 5px;
+  
+  }
+  .sub-card img{
+    
+    border-radius: 50%;
+    height:45px;
+    width: 45px;
+    margin-right: 10px;
+  }
+  
+  
+}
