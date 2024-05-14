@@ -29,7 +29,7 @@ const About = () => {
       <div className="bottom-section">
         <Education />
         <Skills />
-        <Certificates />
+        {/*<Certificates />*/}
       </div>
     </div>
   );
