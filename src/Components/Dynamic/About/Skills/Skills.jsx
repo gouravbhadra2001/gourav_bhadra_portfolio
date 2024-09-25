@@ -24,8 +24,9 @@ const Skills = () => {
     {
       category: 'Machine Learning',
       skills: [
-        { name: 'Classical Machine Learning (Scikit-learn)', proficiency: 'Elementary', confidence: 45 },
-        { name: 'Deep Learning (Tensorflow)', proficiency: 'Elementary', confidence: 40 },
+        { name: 'Classical Machine Learning (Scikit-learn)', proficiency: 'Elementary', confidence: 60 },
+        { name: 'Convolutional Neural Network (Tensorflow and PyTorch)', proficiency: 'Elementary', confidence: 30 },
+        { name: 'Natural Language Processing', proficiency: 'Elementary', confidence: 30 },
       ],
     },
   ];
