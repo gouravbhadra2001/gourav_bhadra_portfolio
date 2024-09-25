@@ -8,8 +8,9 @@ const Skills = () => {
       category: 'Coding',
       skills: [
         { name: 'C', proficiency: 'Intermediate', confidence: 60 },
-        { name: 'Python', proficiency: 'Intermediate', confidence: 80 },
-        { name: 'Java', proficiency: 'Intermediate', confidence: 65 },
+        { name: 'Python', proficiency: 'Intermediate', confidence: 70 },
+        { name: 'Java (OOP)', proficiency: 'Intermediate', confidence: 80 },
+        { name: 'SQL', proficiency: 'Intermediate', confidence: 65 },
         { name: 'JavaScript', proficiency: 'Intermediate', confidence: 63 },
       ],
     },
