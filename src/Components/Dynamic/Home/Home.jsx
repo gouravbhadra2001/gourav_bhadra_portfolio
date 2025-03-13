@@ -46,11 +46,11 @@ const Home = () => {
         <div className="name">Hi, I'm Gourav Bhadra</div>
         
         {/* Developer */}
-        <div className="developer">Full Stack Web Developer</div>
+        <div className="developer">Aspiring IT Professional</div>
         
         {/* Summary */}
         <div className="summary">
-          Hi, I'm Gourav Bhadra, a passionate B.Tech student in Computer Science and Engineering @RCCIIT, Kolkata, currently focusing at Full Stack Web Development (MERN, Flask), interested in Technologies like Deep Learning, NLP, excited to collaborate on dynamic projects and grow as a developer. Click here to visit my portfolio...
+          I am a <i>fourth-year student</i> pursuing <i> Bachelor of Technology in Computer Science and Engineering</i> from <a href="https://rcciit.org/" target="_blank">RCC Institute of Information Technology, Kolkata</a>. I am driven to apply theoretical knowledge and technical expertise to practical projects, fostering innovation and growth. I am eager to collaborate with dynamic teams, harnessing cutting-edge IT technologies to develop impactful business solutions and propel my professional development.
         </div>
         
         {/* Download Resume Button */}
