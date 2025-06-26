@@ -12,7 +12,7 @@ const Projects = () => {
     
     const projectsData = [
         {
-            title: "Project 1: Software-based Alzheimer's Disease Detection [All details updating..Plz stay tuned..]",
+            title: "Project 1: Software-based Alzheimer's Disease Detection",
             description: "This project primarily focuses on detecting the phase of Alzheimer's disease based on the user-uploaded MRI image. We have plans to add many features further.",
             technologies: ['React', 'Flask', 'Node.js', 'MongoDB', 'Tensorflow'],
             technologies_img:[reactImg,flaskImg, nodeImg, mongodbImg, tensorflowImg],
@@ -41,7 +41,7 @@ const Projects = () => {
             demoLink: 'https://alzheimer-s-disease-client.vercel.app/',
         },
       {
-            title: 'Project 2: Sentiment Analysis and Summarisation of Discussion Thread in Medical Forum',
+            title: 'Project 2: Sentiment Analysis and Summarisation of Discussion Thread in Medical Forum [Updating all details, pls. stay tuned..]',
             description: 'Updating...',
             technologies: ['Updating'],
             features: [
