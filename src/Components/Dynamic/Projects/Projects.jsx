@@ -40,31 +40,31 @@ const Projects = () => {
             githubLink: 'https://github.com/gouravbhadra2001/Alzheimer-s_Disease_Client',
             demoLink: 'https://alzheimer-s-disease-client.vercel.app/',
         },
-      /*  {
-            title: 'Project 2: Updating..',
+      {
+            title: 'Project 2: Sentiment Analysis and Summarisation of Discussion Thread in Medical Forum',
             description: 'Updating...',
             technologies: ['Updating'],
             features: [
-                ["Feature 1","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
-                ["Feature 2","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
-                ["Feature 3","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Real-time Sentiment Polarity Prediction of Comments","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Statistical Distribution of Comments with Predicted Sentiment","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Structured Summary Generation of Patient Comments","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
             ],
             challenges: [
-                ["Challenges faced during the development phase.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
-                ["Another challenge added.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
+                ["Huge Cloud Resource Utilisation and Session Expiration","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Missing Reference Summaries in Dataset","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
             ],
             //impact: ["The project had a positive impact on the target audience.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
             lessonsLearned: [
-                ["Lessons learned during the project development.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
-                ["One more lesson.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
+                ["Effectively utilising encoder-only and encoder-decoder transformer for sentiment prediction and summarisation resp.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Effectively utilising score boosting and model selection techniques","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
             ],
             futureImprovements: [
-                ["Planned improvements for future iterations.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
-                ["Additional improvement considered.","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
+                ["Addition of Reference Summaries","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"],
+                ["Fine-Tuning Summaries, PEFT and attempt to fine-tune decoder-only models if possible","https://img.icons8.com/color/48/checked-user-male-skin-type-7.png"]
             ],
             githubLink: 'https://github.com/project2',
             demoLink: 'https://demo.project2.com',
-        },*/
+        },
     ];
 
 
