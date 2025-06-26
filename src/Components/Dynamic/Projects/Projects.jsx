@@ -12,7 +12,7 @@ const Projects = () => {
     
     const projectsData = [
         {
-            title: "Project 1: Software-based Alzheimer's Disease Detection",
+            title: "Project 1: Software-based Alzheimer's Disease Detection [All details updating..Plz stay tuned..]",
             description: "This project primarily focuses on detecting the phase of Alzheimer's disease based on the user-uploaded MRI image. We have plans to add many features further.",
             technologies: ['React', 'Flask', 'Node.js', 'MongoDB', 'Tensorflow'],
             technologies_img:[reactImg,flaskImg, nodeImg, mongodbImg, tensorflowImg],
