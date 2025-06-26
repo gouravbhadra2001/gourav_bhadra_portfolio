@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Home.css';
 import '../../../Animations/bgColorChange.css'
-import Self from './Assets/Self.png';
+import Self from './Assets/me.jpeg';
 import ResumePDF from './Assets/GOURAV_GENERAL_RESUME_V2.pdf'; // Import the PDF file
 import resumeIcon from './Assets/icons8-download-resume-80.png'
 import resumeIcon_dark from './Assets/icons8-download-resume-80_dark.png'
