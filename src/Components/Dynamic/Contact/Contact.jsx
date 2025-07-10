@@ -66,7 +66,7 @@ const Contact = () => {
                             <textarea id="message" name="message" placeholder="Your Message" className="contact-textarea" rows="4" value={formData.message} onChange={handleChange} required />
                         </div>
                         
-                        <button type="submit" className="contact-submit-btn">
+                        <button type="submit" className="contact-submit-btn" onclick="alert('Updating feature..Thanks')">
                             <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/sent.png" alt="sent"/>
                             <p>Send Message</p>
                         </button>
