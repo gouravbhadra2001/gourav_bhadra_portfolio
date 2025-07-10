@@ -11,7 +11,7 @@ const Education = () => {
       school: 'Ramakrishna Vivekananda Mission Vidyabhawan, Barrackpore', // Add school name here
       board: 'West Bengal Board of Secondary Education',
       year: '2018',
-      percentage: '88.89%',
+      result: '88.89%',
       location: '7, River Side Rd, Sardar Bazar, Barrackpore, Barrackpur Cantonment, West Bengal 700120',
     },
     {
@@ -19,7 +19,7 @@ const Education = () => {
       school: 'Ramakrishna Vivekananda Mission Vidyabhawan (HS), Barrackpore', // Add school name here
       board: 'West Bengal Council of Higher Secondary Education',
       year: '2020',
-      percentage: '92.4%',
+      result: '92.4%',
       location: '39, Park Road, River Side Road, Cantonment, Barrackpore, Barrackpur Cantonment, West Bengal 700120',
     },
     {
@@ -29,6 +29,7 @@ const Education = () => {
       college: 'RCC Institute of Information Technology, Kolkata',
       university: 'Maulana Abul Kalam Azad University of Technology (MAKAUT)',
       year: '2021',
+      cgpa: '8.53',
       location: 'Canal S Rd, Beleghata, Kolkata, West Bengal 700015',
     },
   ];
