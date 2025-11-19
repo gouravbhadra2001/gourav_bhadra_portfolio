@@ -1,0 +1,183 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 50px;
+  padding-inline: 50px;
+}
+
+.about-heading {
+  font-size: 20px;
+}
+
+.heading-underline {
+  height: 2px;
+  width: 50px;
+  background-color: red;
+  border-radius: 15px;
+  margin-block-end: 20px;
+  margin-block-start: 10px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.skill-card {
+  border-radius: 10px;
+  border: 1px solid rgb(250, 250, 158);
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px);
+  box-shadow: rgba(224, 240, 120, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.skill-card .skill-type-heading {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.skill-category {
+  padding: 15px;
+}
+
+.skill-type-heading-underline{
+  margin-left: 20px;
+  margin-block: 0;
+  width: 20px;
+}
+
+#blue-underline{
+  background-color: blueviolet;
+}
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-name {
+ margin-bottom: 2px;
+ font-size: 13px;
+}
+
+.empty-10{
+  height: 10px;
+}
+
+
+.progress-bar {
+  height: 7px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Colors based on category */
+.coding .progress {
+  background-color: blue; /* Blue */
+}
+
+.development .progress {
+  background-color: green; /* Green */
+}
+
+.machine-learning .progress {
+  background-color: red; /* Red */
+}
+
+
+@media (max-width: 730px) {
+
+  .about-heading{
+    font-size: 17px;
+  }
+  .skill-card{
+    width: 60vw;
+  }
+
+
+  .skill-card .skill-type-heading {
+  font-size: 15px;
+  }
+
+  .heading-underline {
+  
+    width: 35px;
+   
+   
+    margin-block-end: 10px;
+    margin-block-start: 5px;
+  }
+  
+
+  
+  .skill-card {
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+  }
+  
+
+  
+  .skill-category {
+    padding: 10px;
+    padding-inline: 20px;
+  }
+  
+  .skill-type-heading-underline{
+    margin-left: 20px;
+    margin-block: 0;
+    width: 20px;
+  }
+  
+  #blue-underline{
+    background-color: blueviolet;
+    margin-block-start: -10px;
+  }
+  .skill-item {
+    margin-bottom: 7px;
+  }
+  
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .skill-name {
+   margin-bottom: 2px;
+   font-size: 13px;
+  }
+  
+  .empty-10{
+    height: 5px;
+  }
+  
+  
+  .progress-bar {
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  
+  
+ 
+}

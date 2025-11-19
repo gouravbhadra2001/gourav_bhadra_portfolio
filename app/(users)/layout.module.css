@@ -1,0 +1,8 @@
+.scroll_progress {
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 4px;
+  background: linear-gradient(to right, rgb(99, 24, 205), rgb(60, 17, 177));
+  z-index: 10000;
+}

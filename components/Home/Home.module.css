@@ -1,0 +1,155 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px;
+  box-shadow: rgba(145, 145, 175, 0.756) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 80vw;
+  margin: auto;
+  margin-block: 100px;
+  height: fit-content;
+  border-radius: 40px;
+  border: 2px solid rgb(235, 225, 208);
+  
+}
+
+.selfImg {
+  display: flex;
+  height: fit-content;
+  width:  fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+}
+
+.selfImg img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+
+}
+
+.introduction {
+  flex: 1;
+  padding: 0 2rem;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.name, .developer {
+  text-align: right;
+}
+
+.name {
+  font-size: 35px;
+  font-weight:500;
+  margin-bottom: 10px;
+}
+
+
+.name::selection, .developer::selection, .summary::selection{
+  transition: all 0.6s ease-in-out;
+  color: wheat;
+  text-decoration: underline;
+}
+
+.name::selection{
+  background-color: rgb(50, 24, 116);
+}
+
+.developer {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.developer::selection{
+background-color: rgb(68, 29, 4);
+}
+
+.summary {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+  
+}
+
+.summary::selection{
+  background-color: rgb(48, 41, 104);
+  text-decoration: none;
+ }
+
+.cta-resume, .cta-resume-hover {
+ width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.359);
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid rgb(5, 5, 5);
+  font-size: 15px;
+justify-content: center;
+align-items: center;
+color: rgba(0, 0, 0, 0.701);
+
+}
+
+.cta-resume img, .cta-resume-hover img{
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  
+}
+
+.cta-resume-hover {
+  background-color: rgb(22, 21, 21); 
+  color: aliceblue;
+  
+}
+
+@media (max-width:730px) {
+  
+
+  .home{
+    flex-direction: column;
+    padding: 20px;
+
+  }
+  .selfImg img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+  
+  }
+  .introduction{
+    padding: 20px;
+  }
+  .name, .developer {
+    text-align: center;
+  }
+
+  .name {
+    font-size: 25px;
+    font-weight:500;
+    
+  }
+ .developer{
+  font-size: 15px;
+ }
+
+ .summary{
+  font-size: 10px;
+ }
+ .cta-resume, .cta-resume-hover {
+  width: 150px;
+   border-radius: 25px;
+   font-size: 12px;
+   margin-inline: auto;
+ 
+ }
+ .cta-resume img, .cta-resume-hover img{
+  height: 20px;
+  width: 20px;
+}
+
+}

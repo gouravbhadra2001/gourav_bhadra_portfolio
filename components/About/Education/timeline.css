@@ -1,0 +1,60 @@
+.timeline, .timeline-item{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.timeline{
+    margin-right: 30px;
+}
+
+.timeline-item .no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 176, 176);
+    cursor: pointer;
+}
+
+.timeline-item .no:hover, .timeline-item .no-active{
+   background-color: rgb(12, 86, 143);
+   color:white;
+}
+
+.timeline-item .connector{
+    width: 1px;
+    height: 100px;
+    background-color: rgb(172, 164, 164);
+}
+
+
+@media (max-width: 730px) {
+    .timeline, .timeline-item{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    }
+
+
+    .timeline{
+        margin-right: 0;
+        margin-inline: auto;
+        width: 70vw;
+        margin-bottom: 20px;
+        justify-content: center;
+        
+    }
+    .timeline-item .connector{
+        width: 25vw;
+        height: 1px;
+        background-color: rgb(101, 98, 98);
+    }
+    
+  
+
+}

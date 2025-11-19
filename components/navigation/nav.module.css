@@ -1,0 +1,195 @@
+
+:root{
+    --inh: 100%
+}
+.menubar, .nav, .nav ul{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.nav a{
+    color: rgba(240, 248, 255, 0.501);
+}
+
+.nav a:hover{
+    color: crimson;
+}
+
+.menubar{
+    width: 100%;
+    gap: 50%;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.744);
+
+}
+
+.menubar .hamburger_base{
+    position: relative;
+    display: none;
+    width: 20px;
+    height: 1.2px;
+    margin-top: -5px;
+    
+}
+
+.menubar .hamburger_base::after{
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 5px;
+    width: 50%;
+    height: 0.7px;
+    /*float: right;*/
+}
+
+.menubar .hamburger_base, .menubar .hamburger_base::after{
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.menubar .hamburger_base:hover, .menubar .hamburger_base::after:hover{
+    box-shadow: white ;
+}
+
+
+.nav ul{
+    gap: 10%;
+}
+
+
+.active_link{
+    position:relative;
+    color: rgb(255, 82, 117);
+    width: max-content;
+    transition: all 0.3s ease-in-out;
+}
+
+.active_link a{
+    color: crimson;
+}
+.active_link::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: calc(var(--inh)*0.3);
+    padding: 1px;
+    background-color: brown;
+    margin-top: 10px;
+    animation: translate_right 0.3s forwards;
+}
+
+@keyframes translate_right {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.appdrawer{
+  height:70vh;
+  width: 60%;
+  justify-self: end;
+  border: 0.5px  solid rgba(181, 179, 176, 0.333);
+  background: linear-gradient(to bottom, rgba(156, 153, 153, 0.097), rgba(186, 179, 179, 0.209));
+  border-radius: 20px;
+  transition: display 1s allow-discrete, overlay 1s allow-discrete;
+  animation: close 0.3s forwards;
+  &[open] {
+    animation: open 0.3s forwards;
+  }
+}
+
+@keyframes open {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.appdrawer::backdrop {
+    filter: blur(6px) brightness(0.6);
+    box-shadow: 0 0 32px 0 rgba(165, 152, 171, 0.539), 0 2px 32px 0 rgba(141, 128, 128, 0.2);
+    backdrop-filter: blur(6px) brightness(0.6);
+    transition: all 0.1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+}
+
+
+.close_dialog{
+    
+    float:right; 
+    margin: 10px; height:30px;
+     width:30px; 
+     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.106);
+     cursor: pointer;
+
+    
+}
+.close_dialog:hover{
+    background-color: rgba(179, 25, 55, 0.21);
+}
+
+.appdrawer form{
+    height: 100%;
+    align-self: center;
+}
+  .appdrawer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+        margin: auto;
+ 
+        gap: 5vh;
+        padding-block: 20px;
+       
+    }
+
+@media (width<=1100) {
+    .menubar{
+        gap: 32%;
+    }
+}
+@media (width<=768px) {
+
+    :root{
+        --th_scr_width: 768px;
+    }
+    .nav{
+        display: none;
+    }
+
+  
+    
+    .active_link::after{
+        display: none;
+    }
+    .menubar .hamburger_base{
+        display: block;
+    }
+    .menubar{
+        justify-content: space-around;
+    }
+    
+}
